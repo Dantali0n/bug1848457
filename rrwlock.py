@@ -19,7 +19,6 @@ class ReentrantReadWriteLock(object):
                 while self._wants_write:
                     if not blocking or not first_it:
                         return False
-                    LOG.warning("read wait")
                     self._rcondition.wait(waitout)
                     first_it = False
                 self._num_readers += 1
