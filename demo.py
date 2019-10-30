@@ -32,5 +32,6 @@ def main():
 			if f.done():
 				futures.remove(f)
 				f.result()
+				print("Future done")
 
 if  __name__ =='__main__':main()

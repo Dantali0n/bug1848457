@@ -44,7 +44,7 @@ class ReentrantReadWriteLock(object):
             if int_lock:
                 self._read_lock.release()
 
-     def write_acquire(self, blocking=True):
+    def write_acquire(self, blocking=True):
         """Acquire a reentrant write lock
 
         Allows reentrant writers.
