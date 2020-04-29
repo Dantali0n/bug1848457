@@ -1,0 +1,2 @@
+futurist>=2.1.1
+eventlet>=0.25.2

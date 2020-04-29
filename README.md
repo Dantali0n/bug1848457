@@ -13,6 +13,22 @@ Further readings:
 - https://review.opendev.org/689691
 - https://github.com/larryhastings/gilectomy
 
+## Installation
+
+Recommend to activate a virtualenv before installing requirements.
+
+```bash
+virtualenv -p python3 ./
+source bin/activate
+pip install -r requirements.txt
+```
+
+## Files and tests
+
+* demo-spin-native.py - Working future example using spin locks
+* demo-futurist-works.py - Working futurist example with wait_for_any
+* demo-futurist-blocks.py - Blocking futurist example with wait_for_any
+
 ## Gilectomy
 
 To test CPython without the GIL we can use the

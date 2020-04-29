@@ -1,2 +1,12 @@
+# virtualenv
+bin
+share
+lib
+include
+
+# python bytecode
 __pycache__
 *.pyc
+
+# ide / text editor
+.idea
